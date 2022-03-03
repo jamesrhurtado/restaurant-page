@@ -21,6 +21,21 @@ function addMain(){
 function addFooter(){
     const footer = document.createElement('footer')
     footer.classList.add('footer')
+
+    const copyRight = document.createElement('p')
+    copyRight.textContent = "Copyright © " + new Date().getFullYear() +" jrenzzo"
+
+    const githubLink = document.createElement('a')
+    githubLink.href = "https://github.com/jrenzzo"
+
+    const githubIcon = document.createElement('i')
+    githubIcon.classList.add('fab')
+    githubIcon.classList.add('fa-github')
+
+    githubLink.appendChild(githubIcon)
+    footer.appendChild(copyRight)
+    footer.appendChild(githubLink)
+        
     return footer
 }
 
@@ -28,6 +43,7 @@ function setupWebsite(){
     const content = document.querySelector('.content')
     content.appendChild(addHeader())
     content.appendChild(addMain())
+    content.appendChild(addFooter())
 }
 
 export default setupWebsite;
