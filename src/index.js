@@ -1,1 +1,3 @@
-alert("Hey yo!")
+import setupWebsite from "./setup";
+
+setupWebsite()
