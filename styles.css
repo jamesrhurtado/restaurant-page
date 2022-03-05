@@ -41,6 +41,23 @@
     background-color: olive;
 }
 
+
+/*home*/
+
+.heading-home{
+    color: #fff;
+}
+.text-home{
+    color: #fff;
+
+}
+
+/*contact*/
+/*menu*/
+
+
+
+
 .footer{
     background-color: var(--bg-color);
     position: absolute;
@@ -57,7 +74,7 @@
 
 .fa-github {
     font-size: 30px;
-    color: #000;
+    color: #fff;
     transition: transform 0.3s ease-in-out;
   }
   .fa-github:hover {
