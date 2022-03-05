@@ -8,12 +8,14 @@ function addHeader(){
     brand.classList.add('heading')
 
     header.appendChild(brand)
+    header.appendChild(addTabs())
 
     return header
 }
 
 function addTabs(){
     const tabSection = document.createElement('div')
+    tabSection.classList.add('tab-section')
     const homeButton = document.createElement('button')
     homeButton.classList.add('button-tab')
     homeButton.textContent = "Home"
@@ -54,9 +56,6 @@ function addTabs(){
     tabSection.appendChild(contactButton)
     tabSection.appendChild(menuButton)
     return tabSection
-
-
-
 }
 
 function setTabToActive(tab){
@@ -101,6 +100,8 @@ function setupWebsite(){
     content.appendChild(addHeader())
     content.appendChild(addMain())
     content.appendChild(addFooter())
+
+    //when setting up, it is needed a default tab to load
 }
 
 export default setupWebsite;
