@@ -1,3 +1,5 @@
+import setUpHome from "./home"
+
 
 function addHeader(){
     const header = document.createElement('header')
@@ -24,7 +26,7 @@ function addTabs(){
             return
         }else{
             setTabToActive(homeButton)
-            //load home tab
+            setUpHome()
         }
     })
 

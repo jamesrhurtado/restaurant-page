@@ -2,6 +2,7 @@ function addHome(){
     const home = document.createElement('div')
     const headingHome = document.createElement('p')
     headingHome.textContent = "THE BEST PIZZA"
+    headingHome.classList.add('heading-home')
     const p1 = document.createElement('p')
     p1.textContent = "Low Carb and Crunchy"
     p1.classList.add('text-home')
@@ -23,5 +24,12 @@ function addHome(){
     home.appendChild(p3)
 
     return home
-
 }
+
+function setUpHome(){
+    const main = document.querySelector('.main')
+    main.textContent = ""
+    main.appendChild(addHome())
+}
+
+export default setUpHome;
