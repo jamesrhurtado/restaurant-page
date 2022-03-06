@@ -59,9 +59,9 @@ function addTabs(){
     tabSection.appendChild(menuButton)
     return tabSection
 }
-
+//puts a line at the bottom,  modifies the border
 function setTabToActive(tab){
-    tabs = document.querySelectorAll('button-tab')
+    const tabs = document.querySelectorAll('button-tab')
     tabs.forEach(tab => {
         if(tab !== this){
             tab.classList.remove('active')
