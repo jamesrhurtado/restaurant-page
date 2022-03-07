@@ -1,4 +1,6 @@
 import setUpHome from "./home"
+import setUpMenu from "./menu"
+import setUpContact from "./contact"
 
 
 function addHeader(){
@@ -38,7 +40,7 @@ function addTabs(){
             return
         }else{
             setTabToActive(contactButton)
-            //load contact tab
+            setUpContact()
         }
     })
 
@@ -50,7 +52,7 @@ function addTabs(){
             return
         }else{
             setTabToActive(menuButton)
-            //load menu tab
+            setUpMenu()
         }
     })
 
