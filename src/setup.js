@@ -59,13 +59,13 @@ function addTabs(){
 
 function setTabToActive(button){
     console.log(button.textContent)
-    button.classList.add('active')
-    const tabs = document.querySelectorAll('button-tab')
+
+    const tabs = document.querySelectorAll('.button-tab')
     tabs.forEach((tab) => {
         console.log("im in")
         tab.classList.remove('active')
     });
-
+    button.classList.add('active')
 }
 
 function addMain(){
