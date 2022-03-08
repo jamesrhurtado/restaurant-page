@@ -22,11 +22,10 @@ function addTabs(){
     tabSection.classList.add('tab-section')
     const homeButton = document.createElement('button')
     homeButton.classList.add('button-tab')
+    homeButton.classList.add('home')
     homeButton.textContent = "Home"
-    homeButton.addEventListener('click', (e)=>{
-        if(e.target.classList.contains('active')){
-            return
-        }else{
+    homeButton.addEventListener('click', ()=>{
+        if(!(homeButton.classList.contains('active'))){
             setTabToActive(homeButton)
             setUpHome()
         }
@@ -35,10 +34,8 @@ function addTabs(){
     const contactButton = document.createElement('button')
     contactButton.classList.add('button-tab')
     contactButton.textContent = "Contact"
-    contactButton.addEventListener('click', (e)=>{
-        if(e.target.classList.contains('active')){
-            return
-        }else{
+    contactButton.addEventListener('click', ()=>{
+        if(!(contactButton.classList.contains('active'))){
             setTabToActive(contactButton)
             setUpContact()
         }
@@ -47,10 +44,8 @@ function addTabs(){
     const menuButton = document.createElement('button')
     menuButton.classList.add('button-tab')
     menuButton.textContent = "Menu"
-    menuButton.addEventListener('click', (e)=>{
-        if(e.target.classList.contains('active')){
-            return
-        }else{
+    menuButton.addEventListener('click', ()=>{
+        if(!(menuButton.classList.contains('active'))){
             setTabToActive(menuButton)
             setUpMenu()
         }
@@ -61,15 +56,16 @@ function addTabs(){
     tabSection.appendChild(menuButton)
     return tabSection
 }
-//puts a line at the bottom,  modifies the border
-function setTabToActive(tab){
+
+function setTabToActive(button){
+    console.log(button.textContent)
+    button.classList.add('active')
     const tabs = document.querySelectorAll('button-tab')
-    tabs.forEach(tab => {
-        if(tab !== this){
-            tab.classList.remove('active')
-        }
+    tabs.forEach((tab) => {
+        console.log("im in")
+        tab.classList.remove('active')
     });
-    tab.classList.add('active')
+
 }
 
 function addMain(){
@@ -105,7 +101,8 @@ function setupWebsite(){
     content.appendChild(addMain())
     content.appendChild(addFooter())
 
-    //when setting up, it is needed a default tab to load
+    setTabToActive(document.querySelector('.home'))
+    setUpHome()
 }
 
 export default setupWebsite;
