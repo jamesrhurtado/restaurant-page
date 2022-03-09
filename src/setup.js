@@ -18,11 +18,12 @@ function addHeader(){
 }
 
 function addTabs(){
-    const tabSection = document.createElement('div')
+    const tabSection = document.createElement('nav')
     tabSection.classList.add('tab-section')
     const homeButton = document.createElement('button')
     homeButton.classList.add('button-tab')
     homeButton.classList.add('home')
+    homeButton.setAttribute('data-hover', 'Home')
     homeButton.textContent = "Home"
     homeButton.addEventListener('click', ()=>{
         if(!(homeButton.classList.contains('active'))){
@@ -33,6 +34,7 @@ function addTabs(){
 
     const contactButton = document.createElement('button')
     contactButton.classList.add('button-tab')
+    contactButton.setAttribute('data-hover', 'Contact')
     contactButton.textContent = "Contact"
     contactButton.addEventListener('click', ()=>{
         if(!(contactButton.classList.contains('active'))){
@@ -43,6 +45,7 @@ function addTabs(){
 
     const menuButton = document.createElement('button')
     menuButton.classList.add('button-tab')
+    menuButton.setAttribute('data-hover', 'Menu')
     menuButton.textContent = "Menu"
     menuButton.addEventListener('click', ()=>{
         if(!(menuButton.classList.contains('active'))){
