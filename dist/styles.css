@@ -74,6 +74,32 @@
 }
 
 /*contact*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-self: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.contact h2{
+    font-size: 1.8em;
+    padding: 15px;
+}
+
+
+.contact .location{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .location > div{
+    display: block;
+    margin: auto;
+    border: 2px solid;
+}
 /*menu*/
 
 .menu{

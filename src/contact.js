@@ -14,6 +14,7 @@ function addContact(){
 
     const location = document.createElement('div')
     location.classList.add('card-contact')
+    location.classList.add('location')
     const headingLocation = document.createElement('h2')
     const locationFrame = document.createElement('div')
     headingLocation.textContent = "Location"
