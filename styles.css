@@ -147,8 +147,18 @@ transform: rotateX(10deg);
 }
 
 .menu .card-container{
-    max-width: 400px;
-    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu h3{
+    text-align: center;
+}
+.menu img{
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+
 }
 
 .footer{
