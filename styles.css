@@ -154,11 +154,13 @@ transform: rotateX(10deg);
 .menu h3{
     text-align: center;
 }
-.menu img{
-    display: block;
-    margin: auto;
-    border-radius: 10px;
 
+.menu .card-container p{
+    margin-left: 20px;
+    margin-left: 20px;
+}
+.menu img{
+    border-radius: 10px;
 }
 
 .footer{
