@@ -8,7 +8,7 @@ function addHeader(){
     header.classList.add('header')
 
     const brand = document.createElement('p')
-    brand.textContent = "The Roman"
+    brand.textContent = "Great Hall"
     brand.classList.add('heading')
 
     header.appendChild(brand)

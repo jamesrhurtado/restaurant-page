@@ -14,11 +14,7 @@ function addHome(){
     p3.classList.add('text-home')
 
     home.classList.add('home-section')
-    const homeImg = document.createElement('img')
-    homeImg.src = "images/home.jpg"
-    homeImg.alt = "Pizza"
     home.appendChild(headingHome)
-    home.appendChild(homeImg)
     home.appendChild(p1)
     home.appendChild(p2)
     home.appendChild(p3)
